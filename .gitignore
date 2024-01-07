@@ -1,0 +1,9 @@
+.venv 
+.buildozer
+build
+dist
+windows
+.kv
+buildozer.spec
+icon.png
+*.html
