@@ -1174,7 +1174,7 @@ class TestApp(App):
         shuffle(combined_list)
 
         # Seleccionar un subconjunto aleatorio de 20 preguntas si hay suficientes preguntas
-        total_preguntas = min(3, len(combined_list))
+        total_preguntas = min(50, len(combined_list))
         combined_list = sample(combined_list, total_preguntas)
 
         # Separar las listas combinadas de nuevo
