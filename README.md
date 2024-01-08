@@ -15,7 +15,7 @@ pyinstaller test.spec
 ## Ejecución de la aplicación
 
 ```bash
-./text.exe
+./test.exe
 ```
 
 ## ALT
