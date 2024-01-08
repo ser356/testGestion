@@ -1,4 +1,7 @@
+import os
 from random import sample, shuffle
+import sys
+import time
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
@@ -279,6 +282,26 @@ class TestApp(App):
             "¿Qué metodología utiliza el método ROY para manejar la convergencia y la divergencia en las actividades del proyecto?",
             "¿Qué ventaja principal ofrece el método MCE (Minimum Cost Expediting) del CPM?",
             "¿Qué es un 'camino crítico' y cómo se relaciona con la duración de un proyecto en el método PERT?",
+            "¿Qué representa el Triángulo de Hierro en la gestión de proyectos?",
+            "¿Qué enfoque de gestión de proyectos utiliza una planificación detallada desde el inicio?",
+            "¿Cuál es una característica principal de la metodología ágil?",
+            "¿Qué busca maximizar la metodología Lean en la gestión de proyectos?",
+            "¿Cómo se utiliza Kanban en la gestión de proyectos?",
+            "¿Qué define un 'Proyecto' según el PMBOK?",
+            "¿Qué es un 'Programa' en el contexto de la gestión de proyectos?",
+            "¿Cuál es el objetivo de involucrar a las partes interesadas en un proyecto?",
+            "¿Qué implica el 'Pensamiento sistémico' en la gestión de proyectos?",
+            "¿Qué se busca evaluar a través de la 'Medición' en el dominio de desempeño del PMBOK?",
+            "¿Qué es ISO/IEC/IEEE 15288:2023 en el contexto de la ingeniería de sistemas y software?",
+            "¿En qué se enfoca principalmente la ISO/IEC/IEEE 12207:2017?",
+            "¿Cuál es el propósito principal de la metodología Cascada en la gestión de proyectos?",
+            "¿Qué caracteriza principalmente a Prince2?",
+            "¿Qué destaca en la metodología Extreme Programming (XP) dentro de las metodologías ágiles?",
+            "¿Qué es un 'Porfolio' en la gestión de proyectos según PMBOK?",
+            "¿Cuál es el principal enfoque del 'Sistema para la entrega de valor' en la gestión de proyectos?",
+            "¿Qué representa la 'Administración de proyectos' según el PMBOK?",
+            "¿Cuál es la importancia de la 'Adaptabilidad y resiliencia' en la gestión de proyectos?",
+            "¿Qué evalúa la 'Incertidumbre' en el dominio de desempeño del PMBOK?",
         ]
 
         self.options = [
@@ -1404,6 +1427,102 @@ class TestApp(App):
                 "b) La secuencia más larga de actividades dependientes",
                 "c) La secuencia de actividades más costosas",
             ],
+            [
+                "a) Equilibrio entre tiempo, alcance y coste",
+                "b) Una metodología específica",
+                "c) Un software de gestión",
+            ],
+            [   "a) Gestión adaptativa", "b) Metodología ágil", "c) Gestión predictiva"],
+            [
+                "a) Foco en la documentación extensiva",
+                "b) Planificación detallada y fija",
+                "c) Flexibilidad y enfoque iterativo",
+            ],
+            [
+                "a) Maximizar el riesgo",
+                "b) Minimizar el desperdicio",
+                "c) Aumentar la documentación",
+            ],
+            [
+                "a) Como una herramienta de programación",
+                "b) Para la visualización y control del flujo de trabajo",
+                "c) Como un método de reclutamiento",
+            ],
+            [
+                "a) Una entidad permanente",
+                "b) Un esfuerzo temporal para un resultado único",
+                "c) Un proceso continuo de mejora",
+            ],
+            [
+                "a) Un conjunto de operaciones rutinarias",
+                "b) Proyectos relacionados gestionados coordinadamente",
+                "c) Un modelo de gestión de riesgos",
+            ],
+            [
+                "a) Reducir la eficiencia",
+                "b) Aumentar la complejidad",
+                "c) Contribuir al éxito del proyecto",
+            ],
+            [
+                "a) Ignorar las interacciones del proyecto",
+                "b) Enfocarse solo en los resultados",
+                "c) Reconocer y responder a las interacciones",
+            ],
+            [
+                "a) La eficiencia de los recursos",
+                "b) El desempeño del proyecto",
+                "c) La satisfacción del cliente",
+            ],
+            [
+                "a) Un software de gestión de proyectos",
+                "b) Un estándar para el ciclo de vida del sistema y del software",
+                "c) Una metodología de desarrollo ágil",
+            ],
+            [
+                "a) La calidad del software",
+                "b) Los procesos del ciclo de vida del sistema",
+                "c) La seguridad en el desarrollo de software",
+            ],
+            [
+                "a) Flexibilidad y adaptación a cambios",
+                "b) Desarrollo iterativo e incremental",
+                "c) Desarrollo secuencial y fases lineales",
+            ],
+            [
+                "a) Enfoque en la adaptabilidad",
+                "b) Estructura detallada para la gestión de proyectos",
+                "c) Priorización de la eficiencia",
+            ],
+            [
+                "a) Planificación detallada",
+                "b) Flexibilidad y respuesta rápida a cambios",
+                "c) Enfoque en la calidad y pruebas",
+            ],
+            [
+                "a) Un conjunto de metodologías",
+                "b) Proyectos y operaciones gestionados para objetivos estratégicos",
+                "c) Un modelo de riesgos",
+            ],
+            [
+                "a) Maximizar la eficiencia operativa",
+                "b) Construir y mantener la organización",
+                "c) Reducir costos de proyectos",
+            ],
+            [
+                "a) Proceso de toma de decisiones",
+                "b) Aplicación de conocimientos y técnicas específicas",
+                "c) Estructuración de equipos de trabajo",
+            ],
+            [
+                "a) Gestión de riesgos",
+                "b) Recuperación de reveses y adaptación a cambios",
+                "c) Maximización de beneficios",
+            ],
+            [
+                "a) Evaluación de la satisfacción del cliente",
+                "b) Análisis del entorno del proyecto",
+                "c) Control de calidad del producto final",
+            ],
         ]
 
         self.correct_answers = [
@@ -1652,6 +1771,26 @@ class TestApp(App):
             "a",
             "c",
             "b",
+            "b",
+            "a",
+            "c",
+            "c",
+            "b",
+            "b",
+            "b",
+            "b",
+            "c",
+            "c",
+            "b",
+            "b",
+            "b",
+            "c",
+            "b",
+            "b",
+            "b",
+            "b",
+            "b",
+            "b",
             "b"
             # ... Agregar el resto de las respuestas correctas
         ]
@@ -1659,7 +1798,7 @@ class TestApp(App):
         shuffle(combined_list)
 
         # Seleccionar un subconjunto aleatorio de 20 preguntas si hay suficientes preguntas
-        total_preguntas = min(50, len(combined_list))
+        total_preguntas = min(20, len(combined_list))
         combined_list = sample(combined_list, total_preguntas)
 
         # Separar las listas combinadas de nuevo
@@ -1764,6 +1903,7 @@ class TestApp(App):
 
     def restart_test(self, instance):
         # Cierra el popup y reinicia el test
+
         if self.popup:
             self.popup.dismiss()
             self.popup = None
@@ -1771,7 +1911,6 @@ class TestApp(App):
         self.index = 0
         self.fallo = 0
         self.puntuacion = 0
-        self.build()
 
 
 # ... resto de tu código de QuizApp
