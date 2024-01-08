@@ -1,18 +1,7 @@
 # Métodos de estimación del tiempo
 
-## Diagrama con los métodos de estimación del tiempo
-
 ```mermaid
-
-graph LR
-    A[Método ROY] -->|Holguras y calendario de ejecución| B
-    A -->|Cálculo de tiempos mínimo y máximo| C
-    A -->|Principios básicos| D
-    B -->|Holgura total 'Hk^T'| E["Hk^T = Tk* - Tk"]
-    B -->|Holgura libre 'Hk^L'| F["Hk^L = min[Lk - Tk - Dk]"]
-    B -->|Calendario de ejecución| G["Δk = Tk, Vk = Tk + Dk"]
- 
-
+graph TD
     AA[Método PERT] -->|Contexto aleatorio| AB
     AA -->|Calendario de ejecución del proyecto| AC
     AA -->|Conceptos de holgura y camino crítico| AD
@@ -29,16 +18,17 @@ graph LR
     AG -->|Sucesos de inicio y fin| AO["Inicio: ti = 0, Fin: ti* = max[ti + tij]"]
     AH -->|Prelaciones entre actividades| AP["Lineales, Convergencia, Divergencia"]
 
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style AA fill:#ccf,stroke:#333,stroke-width:2px
-    style AB fill:#cfc,stroke:#333,stroke-width:2px
-    style AC fill:#cff,stroke:#333,stroke-width:2px
-    style AD fill:#fcf,stroke:#333,stroke-width:2px
-    style AE fill:#ff9,stroke:#333,stroke-width:2px
-    style AF fill:#f96,stroke:#333,stroke-width:2px
-    style AG fill:#9f9,stroke:#333,stroke-width:2px
-    style AH fill:#f9f,stroke:#333,stroke-width:2px
+    
 
-    Z{Comparativa de métodos} --> A
-    Z --> AA
+  
+```
+
+```mermaid
+graph TD
+    A[Método ROY] -->|Holguras y calendario de ejecución| B
+    A -->|Cálculo de tiempos mínimo y máximo| C["Tk = max #40;Tj + Dj#41;, Tk* = min #40;TL* - Dk#41;"]
+    B -->|Holgura total Hk^T| E["Hk^T = Tk* - Tk"]
+    B -->|Holgura libre Hk^L| F["Hk^L = min #40;Lk - Tk - Dk#41;"]
+    B -->|Calendario de ejecución| G["Δk = Tk, Vk = Tk + Dk"]
+
 ```
