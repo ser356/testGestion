@@ -1,4 +1,3 @@
-# Tema 1
 
 ```mermaid
 graph LR
@@ -42,3 +41,5 @@ graph LR
     D13 --> D13H[Incertidumbre]
 
 ```
+
+

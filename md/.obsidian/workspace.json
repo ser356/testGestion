@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "b2ca5aa4278672ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ff29dd2ea8a74e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abac3a8824a571b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b7bb5891354b0ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "33144848b5622fa4",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d4c8dbadbfe232f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e1dcf99c4b2a13e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "379e9c03f91dd018",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ecc648b3c70cb900",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 404.5
+  },
+  "right": {
+    "id": "c5a99b026aefd8c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9380acb59fe53b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6af1eb6174fcdfdc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "50e3ae5dc31a6fcf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ec9b065fb6c2882d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "782d488b577397b1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0b7bb5891354b0ef",
+  "lastOpenFiles": [
+    "Pasted image 20240108225021.png",
+    "README.md",
+    "md/Tema 1 - Introduccion.md",
+    "md",
+    "Gestión de Proyectos/Tema 1 - Introduccion.md",
+    "Gestión de Proyectos/Tema 3 - Gestión de Riesgos.md",
+    "Pasted image 20240108225036.png",
+    "Gestión de Proyectos/Tema 4 - Métodos de estimación del tiempo.md",
+    "Métodos.md",
+    "Tema.md",
+    "'Tema.md",
+    "'Introduccion'.md",
+    "Gestión de Proyectos",
+    "2024-01-08.md",
+    "Tema 1",
+    "Untitled.canvas"
+  ]
+}

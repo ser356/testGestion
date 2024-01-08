@@ -1,4 +1,3 @@
-# Métodos de estimación del tiempo
 
 ```mermaid
 graph TD
@@ -23,12 +22,36 @@ graph TD
   
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```mermaid
 graph TD
     A[Método ROY] -->|Holguras y calendario de ejecución| B
     A -->|Cálculo de tiempos mínimo y máximo| C["Tk = max #40;Tj + Dj#41;, Tk* = min #40;TL* - Dk#41;"]
     B -->|Holgura total Hk^T| E["Hk^T = Tk* - Tk"]
-    B -->|Holgura libre Hk^L| F["Hk^L = min #40;Lk - Tk - Dk#41;"]
+    B -->|Holgura libre Hk^L| F["Hk^L = min #40;Tl - Tk - Dk#41;"]
     B -->|Calendario de ejecución| G["Δk = Tk, Vk = Tk + Dk"]
 
 ```
+
+
+
+
+
+
